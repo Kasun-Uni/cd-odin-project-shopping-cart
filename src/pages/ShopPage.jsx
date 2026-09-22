@@ -7,12 +7,12 @@ function ShopPage() {
   const { products, loading, error } = useProducts();
   const { addToCart } = useCart();
 
-  if (loading) return <p>Loading products...</p>;
-  if (error) return <p>Something went wrong while loading products.</p>;
+  if (loading) return <p className={styles.status}>Loading products...</p>;
+  if (error) return <p className={styles.status}>Something went wrong while loading products.</p>;
 
   return (
-    <div>
-      <h1>Shop</h1>
+    <div className={styles.page}>
+      <h1 className={styles.heading}>Shop</h1>
       <div className={styles.grid}>
         {products.map((product) => (
           <ProductCard

@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+.cartPage h1 {
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
 .itemList {
   background-color: white;
   border-radius: 10px;

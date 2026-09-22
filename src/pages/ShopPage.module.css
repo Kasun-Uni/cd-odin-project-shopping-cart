@@ -1,6 +1,20 @@
+.page {
+  padding: 0 2rem;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.status {
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  padding: 1rem 2rem;
 }
