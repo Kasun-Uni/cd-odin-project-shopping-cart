@@ -1,4 +1,6 @@
 import useProducts from "../hooks/useProducts.js";
+import ProductCard from "../components/ProductCard.jsx";
+import styles from "./ShopPage.module.css";
 
 function ShopPage() {
   const { products, loading, error } = useProducts();
@@ -6,15 +8,22 @@ function ShopPage() {
   if (loading) return <p>Loading products...</p>;
   if (error) return <p>Something went wrong while loading products.</p>;
 
+  function handleAddToCart(product, quantity) {
+    console.log("Add to cart:", product.title, "x", quantity);
+  }
+
   return (
     <div>
       <h1>Shop</h1>
-      <p>{products.length} products found.</p>
-      <ul>
+      <div className={styles.grid}>
         {products.map((product) => (
-          <li key={product.id}>{product.title}</li>
+          <ProductCard
+            key={product.id}
+            product={product}
+            onAddToCart={handleAddToCart}
+          />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
