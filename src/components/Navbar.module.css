@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #1f2937;
+  padding: 1rem 2rem;
+}
+
+.navList {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navList a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navList a:hover {
+  text-decoration: underline;
+}
+
+.cartLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge {
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.4rem;
+}
