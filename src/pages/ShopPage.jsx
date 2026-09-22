@@ -1,16 +1,14 @@
 import useProducts from "../hooks/useProducts.js";
 import ProductCard from "../components/ProductCard.jsx";
+import { useCart } from "../context/CartContext.jsx";
 import styles from "./ShopPage.module.css";
 
 function ShopPage() {
   const { products, loading, error } = useProducts();
+  const { addToCart } = useCart();
 
   if (loading) return <p>Loading products...</p>;
   if (error) return <p>Something went wrong while loading products.</p>;
-
-  function handleAddToCart(product, quantity) {
-    console.log("Add to cart:", product.title, "x", quantity);
-  }
 
   return (
     <div>
@@ -20,7 +18,7 @@ function ShopPage() {
           <ProductCard
             key={product.id}
             product={product}
-            onAddToCart={handleAddToCart}
+            onAddToCart={addToCart}
           />
         ))}
       </div>
