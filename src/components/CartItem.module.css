@@ -1,0 +1,66 @@
+.item {
+  display: grid;
+  grid-template-columns: 70px 1fr auto auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.price {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.quantityRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantityRow button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.subtotal {
+  font-weight: bold;
+  color: #059669;
+  min-width: 70px;
+  text-align: right;
+}
+
+.removeButton {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.removeButton:hover {
+  background-color: #fecaca;
+}

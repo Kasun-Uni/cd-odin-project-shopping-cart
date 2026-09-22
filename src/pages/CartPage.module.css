@@ -1,0 +1,31 @@
+.cartPage {
+  padding: 1.5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.itemList {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1.25rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.totalAmount {
+  color: #059669;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: #6b7280;
+}
